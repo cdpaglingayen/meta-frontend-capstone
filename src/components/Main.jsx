@@ -1,5 +1,15 @@
-import React from 'react';
+import Cta from './Cta';
+import Specials from './Specials';
+import Testimonials from './Testimonials';
 
 export const Main = () => {
-  return <section>Main</section>;
+  return (
+    <>
+      <section>
+        <Specials />
+        <Testimonials />
+        <Cta />
+      </section>
+    </>
+  );
 };
