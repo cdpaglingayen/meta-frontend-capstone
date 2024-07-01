@@ -27,12 +27,7 @@ export const Navigation = () => {
               <Nav.Link href='#about'>About</Nav.Link>
               <Nav.Link href='#menu'>Menu</Nav.Link>
               <Nav.Link href='#reservations'>Reservations</Nav.Link>
-              <Nav.Link
-                as={Link}
-                to={'/booking'}
-              >
-                Order Online
-              </Nav.Link>
+              <Nav.Link href='#order-online'>Order Online</Nav.Link>
               <Nav.Link href='#login'>Login</Nav.Link>
             </Nav>
           </Navbar.Collapse>

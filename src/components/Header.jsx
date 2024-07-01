@@ -1,4 +1,7 @@
+import React from 'react';
 import { Button, Col, Row, Image, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+
 export const Header = () => {
   return (
     <>
@@ -15,16 +18,20 @@ export const Header = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <Button
-                className='mb-3'
-                variant='warning'
-              >
-                Reserve a Table
-              </Button>
+              <Link to='/booking'>
+                {' '}
+                {/* Use Link component with 'to' prop */}
+                <Button
+                  className='mb-3'
+                  variant='warning'
+                >
+                  Reserve a Table
+                </Button>
+              </Link>
             </Col>
             <Col className='d-flex justify-content-end'>
               <Image
-                src='./src/assets/restauranfood.jpg'
+                src='./src/assets/restaurantfood.jpg'
                 width={400}
                 height={400}
                 fluid
