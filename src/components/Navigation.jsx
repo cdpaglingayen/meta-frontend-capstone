@@ -1,4 +1,5 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link, Outlet } from 'react-router-dom';
 
 export const Navigation = () => {
   return (
@@ -10,23 +11,34 @@ export const Navigation = () => {
         data-bs-theme='light'
       >
         <Container>
-          <Navbar.Brand href='#home'>
+          <Navbar.Brand href='/'>
             <img src='./src/assets/logo.svg' />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav className='me-auto'></Nav>
             <Nav className='gap-4'>
-              <Nav.Link href='#home'>Home</Nav.Link>
+              <Nav.Link
+                as={Link}
+                to={'/'}
+              >
+                Home
+              </Nav.Link>
               <Nav.Link href='#about'>About</Nav.Link>
               <Nav.Link href='#menu'>Menu</Nav.Link>
               <Nav.Link href='#reservations'>Reservations</Nav.Link>
-              <Nav.Link href='#order-online'>Order Online</Nav.Link>
+              <Nav.Link
+                as={Link}
+                to={'/booking'}
+              >
+                Order Online
+              </Nav.Link>
               <Nav.Link href='#login'>Login</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <Outlet />
     </>
   );
 };
