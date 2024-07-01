@@ -22,7 +22,7 @@ export const Header = () => {
                 Reserve a Table
               </Button>
             </Col>
-            <Col className='d-flex justify-content-center'>
+            <Col className='d-flex justify-content-end'>
               <Image
                 src='./src/assets/restauranfood.jpg'
                 width={400}
