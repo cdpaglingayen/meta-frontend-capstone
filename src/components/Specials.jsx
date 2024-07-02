@@ -4,7 +4,7 @@ export default function Specials() {
   return (
     <>
       <section>
-        <Container>
+        <Container className='mb-5'>
           <div className='d-flex justify-content-between mb-5'>
             <h2>Specials</h2>
             <Button variant='warning'>Online Menu</Button>

@@ -1,3 +1,5 @@
+import { Container } from 'react-bootstrap';
+
 export default function Testimonials() {
-  return <div>Testimonials</div>;
+  return <Container>Testimonials</Container>;
 }

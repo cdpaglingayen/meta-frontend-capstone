@@ -23,8 +23,7 @@ function App() {
         <Route
           path='/booking/confirmed'
           element={<BookingConfirmed />}
-        />{' '}
-        {/* Route for booking confirmation */}
+        />
       </Routes>
     </Router>
   );

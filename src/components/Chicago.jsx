@@ -1,3 +1,5 @@
+import { Container } from 'react-bootstrap';
+
 export default function Chicago() {
-  return <div>Chicago</div>;
+  return <Container>Chicago</Container>;
 }

@@ -10,9 +10,9 @@ export const HomePage = () => {
       <main>
         <Header />
         <Specials />
-        <Testimonials />
+        {/*         <Testimonials />
         <Chicago />
-        <Footer />
+        <Footer /> */}
       </main>
     </>
   );
